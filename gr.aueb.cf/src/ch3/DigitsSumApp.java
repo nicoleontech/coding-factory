@@ -2,11 +2,7 @@ package ch3;
 
 import java.util.Scanner;
 
-/**
- * Υπολογίζει το πλήθος των ψηφίων ενός ακεραίου
- * μέχρι το αποτέλεσμα της διαίρεσης, το υπόλοιπο, να μην είναι 0
- */
-public class DigitCountApp {
+public class DigitsSumApp {
 
     public static void main(String[] args) {
 
@@ -14,7 +10,9 @@ public class DigitCountApp {
 
         int inputNum = 0;
         int num = 0;
+        int sum = 0;
         int digitsCount = 0;
+        int digit = 0;
 
         System.out.println("Please insert a number");
 
@@ -22,10 +20,12 @@ public class DigitCountApp {
         num = inputNum;
 
         do {
+            digit = num % 10;
             digitsCount++;
+            sum += digit;
             num = num / 10;
-        } while (inputNum != 0);
+        } while (num != 0);
 
-        System.out.println("The total digits are " + digitsCount);
+        System.out.println("The total sum of the digits are " + sum +" and the total count of digits is "+digitsCount);
     }
 }

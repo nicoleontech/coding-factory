@@ -18,7 +18,8 @@ public class DateFormatterApp {
         day = scanner.nextInt();
         month = scanner.nextInt();
         year = scanner.nextInt();
+        int yy = year %= 100;
 
-        System.out.println("The date is: "+"0"+day+"/"+month+"/"+year%1000);
+        System.out.printf("The date is: %02d/%d/%d", day, month, yy);
     }
 }

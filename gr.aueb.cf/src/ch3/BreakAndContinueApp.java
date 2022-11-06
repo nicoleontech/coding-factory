@@ -6,23 +6,23 @@ package ch3;
 public class BreakAndContinueApp {
 
     public static void main(String[] args) {
-        int i = 1;
-        int result = 1;
+        int i = 0, j = 0;
+        int result = 0;
 
-        while (i<= 10){
-            i++;
-            if( i ==5){
+        while (true) {
+            if (i == 5) {
                 break;
             }
+            i++;
         }
 
-        while ( i<= 10){
-            i++;
-            if (i==5){
+        while (j <= 10) {
+            j++;
+            if (j == 5) {
                 continue;
             }
-            result = result +1;
+            result = result + j;
         }
-
+        System.out.println("result= " + result);
     }
 }
