@@ -25,9 +25,17 @@ public class StarsDescOrder {
         */
 
         //2nd solution
+//        for (int i = 1; i <= 10; i++) {
+//            System.out.println();
+//            for (int j = 10; j >= i; j--) {
+//                System.out.print("*");
+//            }
+//        }
+
+        //3rd solution
         for (int i = 1; i <= 10; i++) {
             System.out.println();
-            for (int j = 10; j >= i; j--) {
+            for (int j = i; j <= 10; j++) {
                 System.out.print("*");
             }
         }
