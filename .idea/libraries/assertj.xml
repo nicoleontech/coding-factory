@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="assertj">
+    <CLASSES>
+      <root url="file://$MAVEN_REPOSITORY$/org/assertj" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/org/assertj" recursive="false" />
+  </library>
+</component>

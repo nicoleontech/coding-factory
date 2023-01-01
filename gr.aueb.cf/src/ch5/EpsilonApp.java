@@ -19,9 +19,15 @@ public class EpsilonApp {
 //        } else {
 //            System.out.println("not equals");
 //        }
-      
+
+        double d1 = 0.7999999;
+        double d2 = 0.8;
+        if (Math.abs(d1 - d2) < 0.000001) {
+            System.out.println("EQUAL");
+        }
+
         if (Math.abs(actual - expected) <= EPSILON) {
-            System.out.println("EQUAL" +actual);
+            System.out.println("EQUAL" + actual);
         } else {
             System.out.println("NOT EQUAL");
         }
