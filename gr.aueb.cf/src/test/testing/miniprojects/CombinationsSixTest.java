@@ -16,7 +16,8 @@ public class CombinationsSixTest {
     @Test
     void getFirstNumber_FromImportedEntries() throws CsvValidationException, IOException {
         var result = subjectUnderTest.makeCombinations();
-        assertThat(result.get(0)).isNotNull();
-        assertThat(result.get(2)).isEqualTo(3);
+        assertThat(result).isNotNull();
+        assertThat(result[0]).isEqualTo(1);
+        assertThat(result[5]).isEqualTo(6);
     }
 }
