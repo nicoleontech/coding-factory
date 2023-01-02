@@ -1,4 +1,4 @@
-package miniprojects;
+package miniprojects.combinationsOfSix;
 
 import org.junit.jupiter.api.Test;
 
