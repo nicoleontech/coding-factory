@@ -1,4 +1,4 @@
-package miniprojects;
+package ch9;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
