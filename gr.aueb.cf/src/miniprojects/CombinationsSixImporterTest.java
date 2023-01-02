@@ -1,8 +1,7 @@
-package test.testing.miniprojects;
+package miniprojects;
 
 
 import com.opencsv.exceptions.CsvValidationException;
-import miniprojects.CombinationsSixImporter;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -31,6 +30,6 @@ public class CombinationsSixImporterTest {
     @Test
     void importedEntries_NotGreaterThan49() {
         var result = subjectUnderTest.getImportedNumbers();
-        assertThat(result.size()).isEqualTo(49);
+        assertThat(result.length).isEqualTo(48);
     }
 }

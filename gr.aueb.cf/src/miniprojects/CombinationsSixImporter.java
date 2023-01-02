@@ -5,29 +5,28 @@ import com.opencsv.exceptions.CsvValidationException;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Arrays;
 
 public class CombinationsSixImporter {
 
-    private List<Integer> importedNumbers;
+    private int[] importedNumbers;
 
     public CombinationsSixImporter() throws IOException, CsvValidationException {
-        List<Integer> nums = new ArrayList<>();
-        try (CSVReader csvReader = new CSVReader(new FileReader("C:\\Users\\localadmin\\numbers.csv"))) {
+        int[] nums = new int[48];
+        try (CSVReader csvReader = new CSVReader(new FileReader("C:\\Users\\NS\\numbers.csv"))) {
             String[] values;
             while ((values = csvReader.readNext()) != null) {
+               int count=0;
                 for (String value : values) {
-                    nums.add(Integer.parseInt(value));
-                    Collections.sort(nums);
+                    nums[count] = Integer.parseInt(value);
+                    Arrays.sort(nums);
                     this.importedNumbers = nums;
                 }
             }
         }
     }
 
-    public List<Integer> getImportedNumbers() {
+    public int[] getImportedNumbers() {
         return importedNumbers;
     }
 

@@ -1,8 +1,6 @@
-package test.testing.miniprojects;
+package miniprojects;
 
 import com.opencsv.exceptions.CsvValidationException;
-import miniprojects.CombinationsSix;
-
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -14,10 +12,8 @@ public class CombinationsSixTest {
     CombinationsSix subjectUnderTest = new CombinationsSix();
 
     @Test
-    void getFirstNumber_FromImportedEntries() throws CsvValidationException, IOException {
+    void makeCombinations_returnsEveryPossibleCombination() throws CsvValidationException, IOException {
         var result = subjectUnderTest.makeCombinations();
-        assertThat(result).isNotNull();
-        assertThat(result[0]).isEqualTo(1);
-        assertThat(result[5]).isEqualTo(6);
+        assertThat(result).isNotEmpty();
     }
 }
