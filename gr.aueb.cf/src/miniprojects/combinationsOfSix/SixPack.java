@@ -9,7 +9,7 @@ class SixPack {
     static final int MAX_LIMIT_OF_EVEN_NUMBERS = 4;
     static final int MAX_LIMIT_OF_ODD_NUMBERS = 4;
     static final int MAX_LENGTH = 6;
-    public static final int MAX_LIMIT_OF_SAME_ENDING_NUMBERS = 3;
+    static final int MAX_LIMIT_OF_SAME_ENDING_NUMBERS = 3;
     private int[] entries;
 
     SixPack(int[] entries) {
