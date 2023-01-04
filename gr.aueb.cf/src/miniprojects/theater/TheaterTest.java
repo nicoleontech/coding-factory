@@ -15,7 +15,7 @@ class TheaterTest {
     }
 
     @Test
-    void theater_reserveSeat_returnsTrueOnlyOnce_whenSeatNotBooked() {
+    void theater_reserveSeat_returnsFalse_whenTryToBookSameSeat() {
         var sut = new Theater("National Theater", 30, 12);
         assertThat(sut.reserveSeat("A12")).isTrue();
         assertThat(sut.reserveSeat("A12")).isFalse();
@@ -26,5 +26,19 @@ class TheaterTest {
         var sut = new Theater("National Theater", 30, 12);
         assertThat(sut.reserveSeat("L33")).isFalse();
     }
+
+    @Test
+    void theater_cancelReservation_returnsTrue_whenSeatWasBooked() {
+        var sut = new Theater("National Theater", 30, 12);
+        sut.reserveSeat("A12");
+        assertThat(sut.cancelReservation("A12")).isTrue();
+    }
+
+    @Test
+    void theater_cancelReservation_returnsFalse_whenSeatWithSeatNum_notFound() {
+        var sut = new Theater("National Theater", 30, 12);
+        assertThat(sut.cancelReservation("L33")).isFalse();
+    }
+
 
 }

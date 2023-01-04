@@ -38,4 +38,19 @@ class Theater {
         }
         return requestedSeat.reserveSeat();
     }
+
+    boolean cancelReservation(String seatNumber) {
+        TheaterSeat cancelledSeat = null;
+        for (TheaterSeat theaterSeat : this.seats) {
+            if (theaterSeat.getSeatNumber().equals(seatNumber)) {
+                cancelledSeat = theaterSeat;
+                break;
+            }
+        }
+        if (cancelledSeat == null) {
+            System.out.println("No seat with seat number" + seatNumber);
+            return false;
+        }
+        return cancelledSeat.cancel();
+    }
 }

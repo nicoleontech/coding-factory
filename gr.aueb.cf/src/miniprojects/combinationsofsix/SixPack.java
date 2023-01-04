@@ -1,4 +1,4 @@
-package miniprojects.combinationsOfSix;
+package miniprojects.combinationsofsix;
 
 import java.util.ArrayList;
 import java.util.List;
