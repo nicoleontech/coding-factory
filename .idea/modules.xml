@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/coding-factory.iml" filepath="$PROJECT_DIR$/.idea/coding-factory.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gr.aueb.cf/gr.aueb.cf.iml" filepath="$PROJECT_DIR$/gr.aueb.cf/gr.aueb.cf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/gr.aueb.cf/gr.aueb.cf.iml" filepath="$PROJECT_DIR$/src/gr.aueb.cf/gr.aueb.cf.iml" />
     </modules>
   </component>
 </project>

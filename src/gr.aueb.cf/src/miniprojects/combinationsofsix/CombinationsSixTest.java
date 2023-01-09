@@ -1,6 +1,7 @@
 package miniprojects.combinationsofsix;
 
 import com.opencsv.exceptions.CsvValidationException;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -14,6 +15,6 @@ public class CombinationsSixTest {
     @Test
     void makeCombinations_returnsEveryPossibleCombination() throws CsvValidationException, IOException {
         var result = subjectUnderTest.makeCombinations();
-        assertThat(result).isNotEmpty();
+        Assertions.assertThat(result).isNotEmpty();
     }
 }

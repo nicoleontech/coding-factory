@@ -5,6 +5,8 @@ package ch2;
 Διαβάζει από τον χρήστη 3 ακέραιους αριθμούς και τους μετατρέπει σε ημερομηνία της μορφής dd/mm/yy.
  */
 
+import ch5.SayHelloApp;
+
 import java.util.Scanner;
 
 //import static ch5.SayHelloApp.sayHello;
@@ -24,6 +26,6 @@ public class DateFormatterApp {
 
         System.out.printf("The date is: %02d/%d/%d", day, month, yy);
 
-        ch5.SayHelloApp.sayHello();
+        SayHelloApp.sayHello();
     }
 }

@@ -1,4 +1,4 @@
-package test.testing.homework.ch6;
+package ch6;
 
 import homework.ch6.GetMaxCarsInParking;
 import org.junit.jupiter.api.Test;
